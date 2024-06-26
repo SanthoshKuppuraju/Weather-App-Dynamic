@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.wholeapp {
+  position: absolute;
+  top: 50px;
+  left: 540px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 3px rgb(214, 214, 213);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.weatherapp {
+  width: 320px;
+  height: 550px;
+  background-color: white;
+  border-radius: 20px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputbox input {
+  position: relative;
+  top: 30px;
+  left: 60px;
+  width: 200px;
+  padding-right: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputbox img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 228px;
+  bottom: 2px;
+}
+
+.weathercenter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.weatherimg {
+  height: 150px;
+  width: 150px;
+  margin-top: 20px;
+}
+
+.city {
+  color: rgb(255, 196, 0);
+}
+
+.country {
+  color: rgb(82, 81, 81);
+}
+
+.location {
+  margin-top: 10px;
+  display: flex;
+  gap: 70px;
+}
+
+.wind {
+  display: flex;
+  width: 250px;
+  height: 100px;
+  justify-content: space-between;
+  margin-top: 20px;
+
+
+}
+
+.humidity {
+  height: 35px;
+  width: 35px;
+  transform: rotate(90deg);
+}
+
+.windimg {
+  height: 35px;
+  width: 35px;
+}
+
+.weathercontent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.valuewind {
+  margin-top: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.windspan {
+  position: relative;
+  bottom: 5px;
+  color: rgb(147, 146, 142);
 }
