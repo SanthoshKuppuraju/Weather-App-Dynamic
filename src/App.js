@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
-// For the images
+// For the images here I imported manually
 import clearDay from "./Assests/01d.jpg";
 import fewClouds from "./Assests/02d.jpg";
 import onlyCloud from "./Assests/03d.png";
@@ -13,34 +12,38 @@ import thunderStrom from "./Assests/011d.png";
 
 function App() {
   const [data, setData] = useState({});
+
+  // for fetcheing the data
   useEffect(() => {
     getproductdata();
   }, []);
-  const [city, setCity] = useState("CHENNAI");
-  const [cityData, setCityData] = useState("");
-  const handeInputChange = (event) => {
-    setCityData(event.target.value);
-  };
-  const [icon, setIcon] = useState("10n");
 
+  // to handle the input city name
+  const [city, setCity] = useState("CHENNAI");
+  const handeInputChange = (event) => {
+    setCity(event.target.value);
+  };
+
+  // fetching the data from the API
   const getproductdata = async () => {
     const rawData = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=757687cb9f49f0b72bae367e445b2a27&units=Metric`
     );
     const finalData = await rawData.json();
     setData(finalData);
-    setCity(cityData);
   };
+
+  // handling the action for fetching the data
   const handleClick = () => {
     getproductdata();
-    setIcon(data.weather[0].icon);
   };
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
       getproductdata();
-      setIcon(data.weather[0].icon);
     }
   };
+
+  // created an object to store the imported images
   const weatherIcons = {
     "01d": clearDay,
     "01n": clearDay,
@@ -85,7 +88,10 @@ function App() {
           </div>
           {data.name && data.name.length > 0 ? (
             <div className="weathercenter">
-              <img className="weatherimg" src={weatherIcons[`${icon}`]} />
+              <img
+                className="weatherimg"
+                src={weatherIcons[data.weather[0].icon]}
+              />
               <h4>{data.main.temp}°C</h4>
               <h3 className="city">{data.name.toUpperCase()}</h3>
               <h5 className="country">{data.sys.country}</h5>
