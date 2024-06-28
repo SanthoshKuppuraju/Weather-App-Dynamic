@@ -1,101 +1,311 @@
-.wholeapp {
-  position: absolute;
-  top: 50px;
-  left: 535px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 3px 1px rgb(114, 183, 223);
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .wholeapp {
+    position: absolute;
+    top: 50px;
+    left: 535px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 1px rgb(114, 183, 223);
 
+  }
+
+
+  .weatherapp {
+    width: 320px;
+    height: 570px;
+    background-color: white;
+    border-radius: 20px;
+
+  }
+
+  .inputbox input {
+    position: relative;
+    top: 30px;
+    left: 60px;
+    width: 200px;
+    padding-right: 30px;
+  }
+
+  .inputbox img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 228px;
+    bottom: 2px;
+  }
+
+  .weathercenter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .weatherimg {
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .city {
+    color: rgb(255, 196, 0);
+  }
+
+  .country {
+    color: rgb(82, 81, 81);
+  }
+
+  .location {
+    margin-top: 10px;
+    display: flex;
+    gap: 70px;
+  }
+
+  .wind {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    justify-content: space-between;
+    margin-top: 20px;
+
+
+  }
+
+  .humidity {
+    height: 35px;
+    width: 35px;
+    transform: rotate(90deg);
+  }
+
+  .windimg {
+    height: 35px;
+    width: 35px;
+  }
+
+  .weathercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valuewind {
+    margin-top: 5px;
+  }
+
+  .windspan {
+    position: relative;
+    bottom: 5px;
+    color: rgb(147, 146, 142);
+  }
+
+  .developer {
+    color: rgb(86, 86, 86);
+  }
 }
 
+@media (min-width: 425px) and (max-width: 569px) {
+  .wholeapp {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 1px rgb(114, 183, 223);
 
-.weatherapp {
-  width: 320px;
-  height: 570px;
-  background-color: white;
-  border-radius: 20px;
+  }
 
+
+  .weatherapp {
+    width: 320px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+
+  }
+
+  .inputbox input {
+    position: relative;
+    top: 30px;
+    left: 60px;
+    width: 200px;
+    padding-right: 30px;
+  }
+
+  .inputbox img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 228px;
+    bottom: 2px;
+  }
+
+  .weathercenter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .weatherimg {
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .city {
+    color: rgb(255, 196, 0);
+  }
+
+  .country {
+    color: rgb(82, 81, 81);
+  }
+
+  .location {
+    margin-top: 10px;
+    display: flex;
+    gap: 70px;
+  }
+
+  .wind {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    justify-content: space-between;
+    margin-top: 20px;
+
+
+  }
+
+  .humidity {
+    height: 35px;
+    width: 35px;
+    transform: rotate(90deg);
+  }
+
+  .windimg {
+    height: 35px;
+    width: 35px;
+  }
+
+  .weathercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valuewind {
+    margin-top: 5px;
+  }
+
+  .windspan {
+    position: relative;
+    bottom: 5px;
+    color: rgb(147, 146, 142);
+  }
+
+  .developer {
+    color: rgb(86, 86, 86);
+  }
 }
 
-.inputbox input {
-  position: relative;
-  top: 30px;
-  left: 60px;
-  width: 200px;
-  padding-right: 30px;
-}
+@media (min-width: 700px) and (max-width: 1024px) {
+  .wholeapp {
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 1px rgb(114, 183, 223);
 
-.inputbox img {
-  width: 25px;
-  height: 25px;
-  position: relative;
-  left: 228px;
-  bottom: 2px;
-}
-
-.weathercenter {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-}
-
-.weatherimg {
-  height: 150px;
-  width: 150px;
-  margin-top: 20px;
-}
-
-.city {
-  color: rgb(255, 196, 0);
-}
-
-.country {
-  color: rgb(82, 81, 81);
-}
-
-.location {
-  margin-top: 10px;
-  display: flex;
-  gap: 70px;
-}
-
-.wind {
-  display: flex;
-  width: 250px;
-  height: 100px;
-  justify-content: space-between;
-  margin-top: 20px;
+  }
 
 
-}
+  .weatherapp {
+    width: 320px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
 
-.humidity {
-  height: 35px;
-  width: 35px;
-  transform: rotate(90deg);
-}
+  }
 
-.windimg {
-  height: 35px;
-  width: 35px;
-}
+  .inputbox input {
+    position: relative;
+    top: 30px;
+    left: 60px;
+    width: 200px;
+    padding-right: 30px;
+  }
 
-.weathercontent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .inputbox img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 228px;
+    bottom: 2px;
+  }
 
-.valuewind {
-  margin-top: 5px;
-}
+  .weathercenter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-.windspan {
-  position: relative;
-  bottom: 5px;
-  color: rgb(147, 146, 142);
-}
+  }
 
-.developer {
-  color: rgb(86, 86, 86);
+  .weatherimg {
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .city {
+    color: rgb(255, 196, 0);
+  }
+
+  .country {
+    color: rgb(82, 81, 81);
+  }
+
+  .location {
+    margin-top: 10px;
+    display: flex;
+    gap: 70px;
+  }
+
+  .wind {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    justify-content: space-between;
+    margin-top: 20px;
+
+
+  }
+
+  .humidity {
+    height: 35px;
+    width: 35px;
+    transform: rotate(90deg);
+  }
+
+  .windimg {
+    height: 35px;
+    width: 35px;
+  }
+
+  .weathercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valuewind {
+    margin-top: 5px;
+  }
+
+  .windspan {
+    position: relative;
+    bottom: 5px;
+    color: rgb(147, 146, 142);
+  }
+
+  .developer {
+    color: rgb(86, 86, 86);
+  }
 }
